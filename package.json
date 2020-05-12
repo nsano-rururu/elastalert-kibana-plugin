@@ -32,7 +32,7 @@
     "eslint-plugin-mocha": "^5.2.0",
     "eslint-plugin-no-unsanitized": "^3.0.2",
     "eslint-plugin-prefer-object-spread": "^1.2.1",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.19.0"
   },
   "dependencies": {
     "@elastic/eui": "^11.0.1"
