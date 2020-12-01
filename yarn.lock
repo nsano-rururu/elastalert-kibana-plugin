@@ -120,10 +120,10 @@
 "@elastic/eslint-import-resolver-kibana@link:../kibana/packages/kbn-eslint-import-resolver-kibana":
   version "0.0.0"
 
-"@elastic/eui@^30.1.1":
-  version "30.1.1"
-  resolved "https://registry.yarnpkg.com/@elastic/eui/-/eui-30.1.1.tgz#7d3a4e8241cca2e27078f9fa6a0138b26acd3db3"
-  integrity sha512-nsqrOFJfPIGS+TTd4W4viesWdPEDCxazfrPc+DZQ4kosRXLKoJ4lLKDuJKbg90HshCeamKSFgEiqWlqKAlyV+A==
+"@elastic/eui@^30.5.1":
+  version "30.5.1"
+  resolved "https://registry.yarnpkg.com/@elastic/eui/-/eui-30.5.1.tgz#c9782c2f4763d563de6afcc2fc56d81c1e5b183c"
+  integrity sha512-W8rW49prYG0XHNdMWGTxNW50Kef3/fh+IL5mzMOKLao1W4h0F45efIDbnIHyjGl//akknIIEa6bwdTU4dmLBgA==
   dependencies:
     "@types/chroma-js" "^2.0.0"
     "@types/lodash" "^4.14.160"
@@ -135,7 +135,7 @@
     "@types/vfile-message" "^2.0.0"
     chroma-js "^2.1.0"
     classnames "^2.2.6"
-    highlight.js "^9.12.0"
+    highlight.js "^9.18.5"
     lodash "^4.17.20"
     numeral "^2.0.6"
     prop-types "^15.6.0"
@@ -1316,10 +1316,10 @@ hastscript@^5.0.0:
     property-information "^5.0.0"
     space-separated-tokens "^1.0.0"
 
-highlight.js@^9.12.0:
-  version "9.18.1"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.1.tgz#ed21aa001fe6252bb10a3d76d47573c6539fe13c"
-  integrity sha512-OrVKYz70LHsnCgmbXctv/bfuvntIKDz177h0Co37DQ5jamGZLVmoCVMtjMtNZY3X9DrCcKfklHPNeA0uPZhSJg==
+highlight.js@^9.18.5:
+  version "9.18.5"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.5.tgz#d18a359867f378c138d6819edfc2a8acd5f29825"
+  integrity sha512-a5bFyofd/BHCX52/8i8uJkjr9DYwXIPnM/plwI6W7ezItLGqzt7X2G2nXuYSfsIJdkwwj/g9DG1LkcGJI/dDoA==
 
 highlight.js@~10.1.0:
   version "10.1.2"
