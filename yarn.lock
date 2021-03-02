@@ -120,10 +120,10 @@
 "@elastic/eslint-import-resolver-kibana@link:../kibana/packages/kbn-eslint-import-resolver-kibana":
   version "0.0.0"
 
-"@elastic/eui@^30.1.1":
-  version "30.1.1"
-  resolved "https://registry.yarnpkg.com/@elastic/eui/-/eui-30.1.1.tgz#7d3a4e8241cca2e27078f9fa6a0138b26acd3db3"
-  integrity sha512-nsqrOFJfPIGS+TTd4W4viesWdPEDCxazfrPc+DZQ4kosRXLKoJ4lLKDuJKbg90HshCeamKSFgEiqWlqKAlyV+A==
+"@elastic/eui@^31.9.0":
+  version "31.9.0"
+  resolved "https://registry.yarnpkg.com/@elastic/eui/-/eui-31.9.0.tgz#3a34910799e2ec028f25604933e43aa88918b4a8"
+  integrity sha512-6XIQRKJSFMlGIY6PxVzaOejBSrmYkz/pdnKTVPvYcAs4J07njnNhQ8gZkg1VKGXqqBtGwojQoL1Hs++AyeZ4yw==
   dependencies:
     "@types/chroma-js" "^2.0.0"
     "@types/lodash" "^4.14.160"
@@ -135,7 +135,7 @@
     "@types/vfile-message" "^2.0.0"
     chroma-js "^2.1.0"
     classnames "^2.2.6"
-    highlight.js "^9.12.0"
+    highlight.js "^9.18.5"
     lodash "^4.17.20"
     numeral "^2.0.6"
     prop-types "^15.6.0"
@@ -157,6 +157,7 @@
     tabbable "^3.0.0"
     text-diff "^1.0.1"
     unified "^9.2.0"
+    url-parse "^1.4.7"
     uuid "^8.3.0"
     vfile "^4.2.0"
 
@@ -1316,10 +1317,10 @@ hastscript@^5.0.0:
     property-information "^5.0.0"
     space-separated-tokens "^1.0.0"
 
-highlight.js@^9.12.0:
-  version "9.18.1"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.1.tgz#ed21aa001fe6252bb10a3d76d47573c6539fe13c"
-  integrity sha512-OrVKYz70LHsnCgmbXctv/bfuvntIKDz177h0Co37DQ5jamGZLVmoCVMtjMtNZY3X9DrCcKfklHPNeA0uPZhSJg==
+highlight.js@^9.18.5:
+  version "9.18.5"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.5.tgz#d18a359867f378c138d6819edfc2a8acd5f29825"
+  integrity sha512-a5bFyofd/BHCX52/8i8uJkjr9DYwXIPnM/plwI6W7ezItLGqzt7X2G2nXuYSfsIJdkwwj/g9DG1LkcGJI/dDoA==
 
 highlight.js@~10.1.0:
   version "10.1.2"
@@ -1972,6 +1973,11 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
+querystringify@^2.1.1:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
+  integrity sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
+
 raf-schd@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/raf-schd/-/raf-schd-4.0.2.tgz#bd44c708188f2e84c810bf55fcea9231bcaed8a0"
@@ -2235,6 +2241,11 @@ replace-ext@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
   integrity sha1-3mMSg3P8v3w8z6TeWkgMRaZ5WOs=
+
+requires-port@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
+  integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
 resolve-from@^4.0.0:
   version "4.0.0"
@@ -2657,6 +2668,14 @@ uri-js@^4.2.2:
   integrity sha512-KY9Frmirql91X2Qgjry0Wd4Y+YTdrdZheS8TFwvkbLWf/G5KNJDCh6pKL5OZctEW4+0Baa5idK2ZQuELRwPznQ==
   dependencies:
     punycode "^2.1.0"
+
+url-parse@^1.4.7:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.1.tgz#d5fa9890af8a5e1f274a2c98376510f6425f6e3b"
+  integrity sha512-HOfCOUJt7iSYzEx/UqgtwKRMC6EU91NFhsCHMv9oM03VJcVo2Qrp8T8kI9D7amFf1cu+/3CEhgb3rF9zL7k85Q==
+  dependencies:
+    querystringify "^2.1.1"
+    requires-port "^1.0.0"
 
 use-callback-ref@^1.2.1, use-callback-ref@^1.2.3:
   version "1.2.4"
