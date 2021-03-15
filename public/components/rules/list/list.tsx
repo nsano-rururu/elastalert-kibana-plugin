@@ -62,10 +62,10 @@ export default class List extends Component {
     httpClient
       .get('../api/elastalert/rules')
       .then(resp => {
-        this.setState({ rules: resp.data.rules.sort(), error: null, loading: false });
+        this.setState({ rules: resp.rules.sort(), error: null, loading: false });
       })
       .catch(e => {
-        this.setState({ error: e.data, loading: false });
+        this.setState({ error: e, loading: false });
       });
   };
 

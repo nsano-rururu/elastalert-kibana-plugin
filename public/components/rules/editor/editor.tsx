@@ -38,21 +38,23 @@ export default class Editor extends Component {
   loadRule() {
     const { httpClient } = this.props;
     httpClient.get(`../api/elastalert/rules/${this.props.rule}`).then(resp => {
-      this.setState({ value: resp.data, ruleName: this.props.rule });
+      this.setState({ value: resp, ruleName: this.props.rule });
     });
   }
 
   saveRule = () => {
+    console.log(this.state);
     const { httpClient } = this.props;
     this.setState({ saving: true });
     const ruleID = this.props.editorMode === 'edit' ? this.props.rule : this.state.ruleName;
 
     httpClient
       .post(`../api/elastalert/rules/${ruleID}`, {
-        yaml: this.state.value
+        body: JSON.stringify({
+          yaml: this.state.value
+        })
       })
-      .then(resp => {
-        if (resp.status === 200) {
+      .then(() => {
           this.setState({ saving: false });
           addToast(
             'Saved successfully',
@@ -61,7 +63,6 @@ export default class Editor extends Component {
           );
           this.closeModal();
           loadRules();
-        }
       })
       .catch(e => {
         this.setState({ saving: false });
@@ -73,32 +74,37 @@ export default class Editor extends Component {
       });
   };
 
+  // TODO: fix this
   testRule = () => {
     const { httpClient } = this.props;
     this.setState({ testing: true, testFailed: null, testResponse: null });
 
     httpClient
       .post(`../api/elastalert/test`, {
-        rule: this.state.value,
-        testType: 'schemaOnly'
+        body: JSON.stringify({
+          rule: this.state.value,
+          options: {
+            testType: 'schemaOnly'
+          }          
+        })
       })
       .then(resp => {
         this.setState({
           testing: false,
           testFailed: false,
-          testResponse: resp.data
+          testResponse: resp
         });
       })
       .catch(e => {
         this.setState({
           testing: false,
           testFailed: true,
-          testResponse: e.data.message ? e.data.message : e.data,
+          testResponse: e.message ? e.message : e,
         });
       });
   };
 
-  onChange = value => {
+  onChange = value => {    
     this.setState({ value: value });
   };
 
