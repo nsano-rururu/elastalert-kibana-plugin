@@ -1,13 +1,8 @@
 # Fork of bitsensor/elastalert-kibana-plugin
 
-Since the official site does not release the latest Kibana compatible version, 
-it is intended to publish the latest version until the release, 
-and there are no plans to add features or fix bugs. 
-If the official website resumes the latest release, this repository will be deleted.
+The original bitsensor/elastalert-kibana-plugin repository has become mostly stale, with over 50 open issues. Consequently, it is difficult to merge fixes, dependency upgrades, and new features into bitsensor. Because of this, a fork of elastalert-kibana-plugin has been created. 
 
 ---
-
-# ElastAlert Kibana Plugin
 
 > This plugin provides a way to create, test and edit ElastAlert rules within Kibana.
 
@@ -41,4 +36,4 @@ elastalert-kibana-plugin.serverPort: 9000
 ```
 
 ## Contribution
-Please report any issues or suggestions you have on the [issues page](https://github.com/nsano-rururu/elastalert-kibana-plugin/issues). If you want to create a pull request please check our [contribution guide](CONTRIBUTING.md).
+Please report any issues or suggestions you have on the [discussions page](https://github.com/nsano-rururu/elastalert-kibana-plugin/discussions). If you want to create a pull request please check our [contribution guide](CONTRIBUTING.md).
