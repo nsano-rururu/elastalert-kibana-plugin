@@ -23,7 +23,7 @@ services:
 
   # https://github.com/Karql/elastalert fork of bitsensor/elastalert
   elastalert:
-    image: karql/elastalert
+    image: praecoapp/elastalert-server
     restart: always
     expose:
       - 3030
