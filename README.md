@@ -25,7 +25,8 @@ Consequently, it is difficult to merge fixes, dependency upgrades, and new featu
 ## Installation
 Check the [releases](https://github.com/nsano-rururu/elastalert-kibana-plugin/releases) page to download and install the latest version of this plugin that is compatible with your Kibana version. Please be aware that you will need a running ElastAlert server to make use of this plugin.
 
-[ElastAlert Server Docker Images](https://github.com/nsano-rururu/elastalert-kibana-plugin/wiki/ElastAlert-Server-Docker-Images)
+[ElastAlert Server Docker Images](https://hub.docker.com/r/praecoapp/elastalert-server)
+
 [docker-compose sample](https://github.com/nsano-rururu/elastalert-kibana-plugin/wiki/docker-compose-sample)
 
 ## Configuration
