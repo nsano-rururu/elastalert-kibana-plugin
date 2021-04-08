@@ -1,4 +1,10 @@
-# ElastAlert Kibana Plugin
+# Fork of bitsensor/elastalert-kibana-plugin
+
+The original bitsensor/elastalert-kibana-plugin repository has become mostly stale, with over 50 open issues. 
+
+Consequently, it is difficult to merge fixes, dependency upgrades, and new features into bitsensor. Because of this, a fork of elastalert-kibana-plugin has been created.
+
+---
 
 > This plugin provides a way to create, test and edit ElastAlert rules within Kibana.
 
@@ -10,19 +16,11 @@
 
 ## Demo
 ![Showcase](showcase.gif)
-
-## Why I created a fork repository
-
-Since the official site does not release the latest Kibana compatible version, 
-it is intended to publish the latest version until the release, 
-and there are no plans to add features or fix bugs. 
-If the official website resumes the latest release, this repository will be deleted.
-
 ## Requirements
 - Our [ElastAlert server](https://github.com/bitsensor/elastalert) fork
 - [Kibana 6.8.1～6.8.12、7.5.1～7.8.1](https://github.com/nsano-rururu/elastalert-kibana-plugin/releases/tag/1.2.0)
 - [Kibana 7.9.0～7.9.3](https://github.com/nsano-rururu/elastalert-kibana-plugin/releases/tag/1.3.0)
-- TODO: [Kibana 7.10.0～](https://github.com/nsano-rururu/elastalert-kibana-plugin/releases/tag/1.4.0)
+- [Kibana 7.10.0～](https://github.com/nsano-rururu/elastalert-kibana-plugin/releases/tag/1.4.0)
 
 ## Installation
 Check the [releases](https://github.com/nsano-rururu/elastalert-kibana-plugin/releases) page to download and install the latest version of this plugin that is compatible with your Kibana version. Please be aware that you will need a running ElastAlert server to make use of this plugin.
@@ -31,43 +29,24 @@ Check the [releases](https://github.com/nsano-rururu/elastalert-kibana-plugin/re
 [docker-compose sample](https://github.com/nsano-rururu/elastalert-kibana-plugin/wiki/docker-compose-sample)
 
 ## Configuration
-By default the plugin will connect to `http://localhost:3030`. If your ElastAlert server is running on a different host or port add/change the following options in your `config/kibana.yml` file: 
 
-```
-elastalertKibanaPlugin.serverSsl: false
-elastalertKibanaPlugin.serverHost: localhost
-elastalertKibanaPlugin.serverPort: 3030
-```
+By default the plugin will connect to `http://localhost:3030`. If your ElastAlert server is running on a different host or port add/change the following options in your `config/kibana.yml` file: 
 
 ⚠️ from version 1.4.0 config section name has been changed:
 `elastalert-kibana-plugin -> elastalertKibanaPlugin`
 
-## Changelog
+```
+# 1.2.0, 1.3.0
+elastalert-kibana-plugin.serverSsl: false
+elastalert-kibana-plugin.serverHost: localhost
+elastalert-kibana-plugin.serverPort: 3030
 
-### 1.4.0 (2021-03-15)
-
-**Features**
-- Migrate to legacy plugin to Kibana Plaftorm (thanks to: @ch-bas who started this migration)
-- Support version Kibana 7.11.1
-
-**Braking changes**
-- config section name has been changed `elastalert-kibana-plugin -> elastalertKibanaPlugin`
-
-**Bug fixes**
-- HttpRoutes
-> All input (body, query parameters, and URL parameters) must be validated using the `@kbn/config-schema` package. If no validation schema is provided, these values will be empty objects
-
-https://www.elastic.co/guide/en/kibana/current/migrating-legacy-plugins-examples.html#http-routes-migration
-
-- EuiButtonToggle
-EuiButtonToggle was removed: https://github.com/elastic/eui/blob/fe426f6f6828b5e9ed88dc82627c54e403801b59/CHANGELOG.md#3000
-
-**Not working / TODO**
-- Testing rules (probably need changes in ElastAlert Server)
-- Show error when delete rule fails
-- Fix typings
-
-## Dev notes
+# 1.4.0
+elastalertKibanaPlugin.serverSsl: false
+elastalertKibanaPlugin.serverHost: localhost
+elastalertKibanaPlugin.serverPort: 3030
+```
+### Dev notes
 
 If you would like to run this plugin:
 
