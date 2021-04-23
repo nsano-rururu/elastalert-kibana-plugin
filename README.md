@@ -16,7 +16,7 @@ The original bitsensor/elastalert-kibana-plugin repository has become mostly sta
 ![Showcase](showcase.gif)
 
 ## Requirements
-- Our [ElastAlert server](https://github.com/bitsensor/elastalert) fork
+- Our [ElastAlert server](https://github.com/johnsusek/elastalert-server) fork
 - [Kibana 6.8.1～6.8.12、7.5.1～7.8.1](https://github.com/nsano-rururu/elastalert-kibana-plugin/releases/tag/1.2.0)
 - [Kibana 7.9.0～7.9.3](https://github.com/nsano-rururu/elastalert-kibana-plugin/releases/tag/1.3.0)
 - Does not support kibana 7.10 or higher
